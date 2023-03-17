@@ -5,7 +5,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController 
@@ -56,7 +58,10 @@ public class TestController {
     return map; 
   } 	
   
- 
+  @RequestMapping(value= "/notice/{num}" , method = RequestMethod.GET)
+  public int notice(@PathVariable("num") int num ) throws Exception {
+	  return num;
+  }	
 
   
   
