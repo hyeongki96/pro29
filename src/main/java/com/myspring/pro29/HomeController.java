@@ -38,6 +38,6 @@ public class HomeController {
 	public String home(Locale locale, Model model) {
 	  return "JSONTest";
 	  
-	  //ÁÖ¼® Å×½ºÆ®
+	  //í…ŒìŠ¤íŠ¸
 	}
 }
