@@ -37,5 +37,7 @@ public class HomeController {
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 	  return "JSONTest";
+	  
+	  //주석 테스트
 	}
 }
